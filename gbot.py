@@ -1,3 +1,5 @@
+#!/usr/bin/python3.6
+
 import discord
 import math
 import random
@@ -497,7 +499,7 @@ async def on_message(message):
             html = html.decode(charset)
             await client.send_message(message.channel, html2text.html2text(html))
 
-
+            
 @client.event
 async def on_ready():
     print('Logged in as:')
